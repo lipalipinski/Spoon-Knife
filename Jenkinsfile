@@ -6,25 +6,25 @@ pipeline {
     
     stage("build") {
       steps {
-        sh 'echo "build starts..."'
+        echo 'build starts...'
         sh 'sleep 10'
-        sh 'echo "build finished!"'
+        echo 'build finished!'
       }
     }
     
     stage("test") {
       steps {
-        sh 'echo "test starts..."'
+        echo 'test starts...'
         sh 'sleep 10'
-        sh 'echo "test finished!"'
+        echo 'test finished!'
       }
     }
     
     stage("deploy") {
       steps {
-        sh 'echo "deployment starts..."'
+        echo 'deployment starts...'
         sh 'sleep 10'
-        sh 'echo "deployment finished!"'
+        echo 'deployment finished!'
       }
     }
   }
